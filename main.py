@@ -23,7 +23,7 @@ def get_local_explanation(prompt):
         response = requests.post(
             "http://localhost:11434/api/generate",
             json={
-                "model": "llama3.1:8b",
+                "model": "llama3:8b",
                 "prompt": f"Explain this concept creatively for a beginner:\n{prompt}",
                 "stream": False
             }
